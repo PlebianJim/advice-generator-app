@@ -18,12 +18,13 @@ body {
 .container {
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: space-evenly;
     align-items: center;
     height: 400px;
     width: 600px;
     background-color: hsl(217, 19%, 24%);
     border-radius: 20px;
+    padding: 10px;
 }
 
 #advice-number {
@@ -33,13 +34,18 @@ body {
 }
 
 #advice-given {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     color: hsl(193, 38%, 86%);
     font-weight: 800;
     letter-spacing: 3px;
     font-size: 25px;
     width: 500px;
+    height: 200px;
     text-align: center;
     text-wrap: wrap;
+    overflow: hidden;
 }
 
 .divider {
@@ -50,21 +56,12 @@ body {
     background-color: hsl(150, 100%, 66%);
     padding: 15px;
     border-radius: 50px;
-    position: absolute;
-    bottom: 233px;
+    margin-bottom: -67px;
 }
 
 .dice:hover {
     box-shadow: 0 0 5px 0 hsl(150, 100%, 66%), 0 0 10px 0 hsl(150, 100%, 66%), 0 0 20px 0 hsl(150, 100%, 66%);
     cursor: pointer;
-}
-
-.button {
-    background-color: hsl(150, 100%, 66%);
-    padding: 15px;
-    border-radius: 50px;
-    position: absolute;
-    bottom: 233px;
 }
 
 @media (max-width: 600px) {
