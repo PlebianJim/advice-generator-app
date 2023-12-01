@@ -1,0 +1,79 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    caret-color: transparent;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+    background-color: hsl(218, 23%, 16%);
+    font-family: 'Manrope', sans-serif;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    height: 400px;
+    width: 600px;
+    background-color: hsl(217, 19%, 24%);
+    border-radius: 20px;
+}
+
+#advice-number {
+    color: hsl(150, 100%, 66%);
+    font-weight: 800;
+    letter-spacing: 5px;
+}
+
+#advice-given {
+    color: hsl(193, 38%, 86%);
+    font-weight: 800;
+    letter-spacing: 3px;
+    font-size: 25px;
+    width: 500px;
+    text-align: center;
+    text-wrap: wrap;
+}
+
+.divider {
+    width: 80%;
+}
+
+.dice {
+    background-color: hsl(150, 100%, 66%);
+    padding: 15px;
+    border-radius: 50px;
+    position: absolute;
+    bottom: 233px;
+}
+
+.dice:hover {
+    box-shadow: 0 0 5px 0 hsl(150, 100%, 66%), 0 0 10px 0 hsl(150, 100%, 66%), 0 0 20px 0 hsl(150, 100%, 66%);
+    cursor: pointer;
+}
+
+.button {
+    background-color: hsl(150, 100%, 66%);
+    padding: 15px;
+    border-radius: 50px;
+    position: absolute;
+    bottom: 233px;
+}
+
+@media (max-width: 600px) {
+    .container {
+        width: 370px;
+    }
+
+    #advice-given {
+        width: 270px;
+        font-size: 20px;
+    }
+}
